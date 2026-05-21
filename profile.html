@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelio Rayhan Palupi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="#home">Aurelio<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#profil">Profile</a></li>
+          <li><a href="#skill">Skill</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMobileMenu()">Home</a>
+        <a href="#profil" onclick="closeMobileMenu()">Profile</a>
+        <a href="#skill" onclick="closeMobileMenu()">Skill</a>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <div class="home-inner">
+          <div class="home-img-wrap">
+            <div class="home-img">
+              <img src="./img/profil-img.png" alt="Foto Profil" />
+            </div>
+            <div class="home-tag">✦ Web Developer</div>
+          </div>
+
+          <article class="home-text">
+            <p class="greeting">Hello, World!</p>
+            <h1>I'm Aurelio<br /><em>Rayhan</em> Palupi</h1>
+            <p class="subtitle">
+              Crafting beautiful and functional web experiences with a passion
+              for clean code and thoughtful design.
+            </p>
+            <div class="home-cta">
+              <a href="#profil" class="btn-primary">About Me ↓</a>
+              <a href="#skill" class="btn-outline">My Skills</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <section id="profil">
+        <div class="blob blob-3"></div>
+
+        <div class="section-header">
+          <p class="eyebrow">About Me</p>
+          <h2>Who I <em>Am</em></h2>
+        </div>
+
+        <div class="profil-grid">
+          <div class="profil-img-wrap">
+            <div class="profil-img">
+              <img src="./img/profil-img.png" alt="Foto Profil" />
+            </div>
+            <div class="profil-badge">
+              <div class="num">2+</div>
+              <div class="label">Years Experience</div>
+            </div>
+          </div>
+
+          <div class="profil-content">
+            <p>
+              I am an Informatics student at Universitas Ahmad Dahlan, under the
+              Faculty of Industrial Technology. I was born on March 21, 2007,
+              and I come from South Sumatra, Indonesia. I have a strong passion
+              for martial arts and poetry writing, as both activities help me
+              develop discipline, creativity, and self-expression. Besides my
+              personal interests, I am also highly enthusiastic about web
+              development. I enjoy learning how websites are designed and built,
+              especially in creating interactive, responsive, and user-friendly
+              web applications.
+            </p>
+            <p>
+              As a technology enthusiast, I am motivated to continuously improve
+              my programming and problem-solving skills in order to become a
+              professional developer in the future. I believe that combining
+              creativity with technology can lead to innovative digital
+              solutions that are both useful and impactful.
+            </p>
+            <div class="info-row">
+              <div class="info-item">
+                <span class="info-label">Name</span>
+                <span class="info-val">Aurelio Rayhan Palupi</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Role</span>
+                <span class="info-val">Web Developer</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-val">Indonesia</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Status</span>
+                <span class="info-val">Available for work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skill">
+        <div class="blob blob-4"></div>
+
+        <div class="section-header">
+          <p class="eyebrow">What I Do</p>
+          <h2>My <em>Skills</em></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>
+              Designing intuitive and visually appealing interfaces that create
+              memorable user experiences and drive engagement.
+            </p>
+            <div class="skill-level">
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <h3>Frontend Dev</h3>
+            <p>
+              Building responsive and performant web interfaces using modern
+              HTML, CSS, and JavaScript with attention to detail.
+            </p>
+            <div class="skill-level">
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">⚙️</div>
+            <h3>Backend Dev</h3>
+            <p>
+              Creating robust server-side applications and APIs that power
+              seamless, data-driven web experiences.
+            </p>
+            <div class="skill-level">
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>
+              Ensuring every project looks and works perfectly across all
+              devices, screen sizes, and browsers.
+            </p>
+            <div class="skill-level">
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🚀</div>
+            <h3>Performance</h3>
+            <p>
+              Optimizing web applications for speed and efficiency, ensuring
+              fast load times and smooth interactions.
+            </p>
+            <div class="skill-level">
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot active"></div>
+              <div class="skill-dot"></div>
+              <div class="skill-dot"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 <span>Aurelio Rayhan Palupi</span>. Crafted with ♥</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
